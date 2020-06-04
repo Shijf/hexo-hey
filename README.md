@@ -36,7 +36,8 @@ admin:
     name: hexo
     password: hey
     secret: hey hexo
-    expire: 60*1
+    expire: 60*1 
+    # cdn_image_url: 'https://cdn.jsdelivr.net/gh/shijf/shijf.github.io' ## this is your cdnUrl, 
     # cors: http://localhost:3000
 ```
 cors is optional if you want serve your client in another place(CDN for example)

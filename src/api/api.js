@@ -200,7 +200,7 @@ function router(api, hexo) {
       }
       hexo.source.process(req.file.filename).then(() => {
         res.json({
-          filename: hexo.config.url + '/' + req.file.filename
+          filename: hexo.config.admin.cdn_image_url ?  hexo.config.admin.cdn_image_url : hexo.config.url + '/' + req.file.filename
         });
       }).catch(() => {
         res.status(400).json({
